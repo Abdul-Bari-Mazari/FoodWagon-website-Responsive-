@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +18,21 @@
 </head>
 
 <body>
+
+</body>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
     <nav>
         <div class="navbar-container">
-            <img src="./images/logo.png" alt="">
+            <img class="logo" src="./images/logo.png" alt="">
             <div class="location-info">
                 <p class="deliver-search">Deliver to: </p>
                 <p class="cur-loc">
@@ -29,6 +44,7 @@
             <div class="search-login">
                 <p class="deliver-search"><i class="fa-solid fa-magnifying-glass"></i> Search Food</p>
                 <button><i class="fa-solid fa-user"></i> Login</button>
+                <img class="hamburger-menu" src="./images/hamburger-menu.svg" alt="">
             </div>
         </div>
     </nav>
@@ -48,10 +64,12 @@
                 <div class="find-food-container">
                     <div class="input-location">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>Enter Your Address</p>
+                        <input type="text" placeholder="Enter Your Address">
+                    </div>
+                    <div class="btn-container">
+                        <button><i class="fa-solid fa-magnifying-glass"></i>Find food</button>
                     </div>
 
-                    <button><i class="fa-solid fa-magnifying-glass"></i> Find Food</button>
                 </div>
             </div>
             <img class="noodle-img" src="./images/noodle-image.png" alt="">
@@ -103,19 +121,19 @@
 
             <div class="small-container">
                 <img src="./images/choose-order.svg" alt="">
-                <p class="greys-vage two">Select Location</p>
+                <p class="greys-vage two">Choose order</p>
                 <p class="light-text">Check over hundreds of menus to pick your favorite food</p>
             </div>
 
             <div class="small-container">
                 <img src="./images/dollar.svg" alt="">
-                <p class="greys-vage two">Select Location</p>
+                <p class="greys-vage two">Pay advanced</p>
                 <p class="light-text">It's quick, safe, and simple. Select several methods of payment</p>
             </div>
 
             <div class="small-container">
                 <img src="./images/donut.svg" alt="">
-                <p class="greys-vage two">Select Location</p>
+                <p class="greys-vage two">Enjoy meals</p>
                 <p class="light-text">Food is made and delivered directly to your home.</p>
             </div>
         </div>
@@ -136,9 +154,9 @@
                     Order Now
                 </button>
             </div>
-    
+
             <div class="popular-item">
-                <img src="./images/Rectangle 336.png" alt="">
+                <img src="./images/Rectangle 336 (1).png" alt="">
                 <p class="greys-vage">Cheese Burger</p>
                 <p class="yellow-location"><i class="fa-solid fa-location-dot"></i> Burger Arena</p>
                 <p class="greys-vage">$3.88</p>
@@ -146,9 +164,9 @@
                     Order Now
                 </button>
             </div>
-    
+
             <div class="popular-item">
-                <img src="./images/Rectangle 336.png" alt="">
+                <img src="./images/Rectangle 336 (2).png" alt="">
                 <p class="greys-vage">Cheese Burger</p>
                 <p class="yellow-location"><i class="fa-solid fa-location-dot"></i> Burger Arena</p>
                 <p class="greys-vage">$3.88</p>
@@ -156,9 +174,9 @@
                     Order Now
                 </button>
             </div>
-    
+
             <div class="popular-item">
-                <img src="./images/Rectangle 336.png" alt="">
+                <img src="./images/Rectangle 336 (3).png" alt="">
                 <p class="greys-vage">Cheese Burger</p>
                 <p class="yellow-location"><i class="fa-solid fa-location-dot"></i> Burger Arena</p>
                 <p class="greys-vage">$3.88</p>
@@ -166,9 +184,9 @@
                     Order Now
                 </button>
             </div>
-    
+
             <div class="popular-item">
-                <img src="./images/Rectangle 336.png" alt="">
+                <img src="./images/Rectangle 336 (4).png" alt="">
                 <p class="greys-vage">Cheese Burger</p>
                 <p class="yellow-location"><i class="fa-solid fa-location-dot"></i> Burger Arena</p>
                 <p class="greys-vage">$3.88</p>
@@ -176,9 +194,256 @@
                     Order Now
                 </button>
             </div>
-    
+
             <button class="arrow-btn">&#62;</button>
         </div>
+    </div>
+
+    <div class="featured-restaurants">
+        <p class="how-heading" style="color: black;">Featured Restaurants</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="img-div">
+                    <img src="./images/featured-rests-imgs/foodworld.png" alt="">
+                    <div class="tag"><i class="fa-solid fa-tag"></i> 20% off</div>
+                    <div class="timer"><i class="fa-solid fa-clock"></i> Fast</div>
+                </div>
+
+                <div class="rest-logo">
+                    <img src="./images/featured-rests-imgs/Restaruant Logologo1.png" alt="">
+
+                    <div class="name-rating">
+                        <p class="greys-vage">Foodworld</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i><span class="rate">46</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="opening">
+                    Opens tommorrow
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="./images/featured-rests-imgs/Imagepizzahub.png" alt="">
+                    <div class="tag"><i class="fa-solid fa-tag"></i> 20% off</div>
+                    <div class="timer"><i class="fa-solid fa-clock"></i> Fast</div>
+                </div>
+
+                <div class="rest-logo">
+                    <img src="./images/featured-rests-imgs/Restaruant Logologo2.png" alt="">
+
+                    <div class="name-rating">
+                        <p class="greys-vage">
+                            Pizzahub</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i><span class="rate">46</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="opening">
+                    Opens tommorrow
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="./images/featured-rests-imgs/Imagedonutshut.png" alt="">
+                    <div class="tag"><i class="fa-solid fa-tag"></i> 20% off</div>
+                    <div class="timer"><i class="fa-solid fa-clock"></i> Fast</div>
+                </div>
+
+                <div class="rest-logo">
+                    <img src="./images/featured-rests-imgs/Imagelogo3.png" alt="">
+
+                    <div class="name-rating">
+                        <p class="greys-vage">
+                            Donuts hut</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i><span class="rate">46</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="opening green">
+                    Open Now
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="./images/featured-rests-imgs/Imagedonutshut2.png" alt="">
+                    <div class="tag"><i class="fa-solid fa-tag"></i> 20% off</div>
+                    <div class="timer"><i class="fa-solid fa-clock"></i> Fast</div>
+                </div>
+
+                <div class="rest-logo">
+                    <img src="./images/featured-rests-imgs//Imagelogo4.png" alt="">
+
+                    <div class="name-rating">
+                        <p class="greys-vage">
+                            Donuts hut</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i><span class="rate">46</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="opening green">
+                    Open Now
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="cards">
+            <div class="card">
+                <div class="img-div">
+                    <img src="./images/featured-rests-imgs/Imageruby.png" alt="">
+                    <div class="tag"><i class="fa-solid fa-tag"></i> 20% off</div>
+                    <div class="timer"><i class="fa-solid fa-clock"></i> Fast</div>
+                </div>
+
+                <div class="rest-logo">
+                    <img src="./images/featured-rests-imgs/Imagelogo5.png" alt="">
+
+                    <div class="name-rating">
+                        <p class="greys-vage">Foodworld</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i><span class="rate">46</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="opening green">
+                    Open Now
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="./images/featured-rests-imgs/Imagefriedchicken.png" alt="">
+                    <div class="tag"><i class="fa-solid fa-tag"></i> 20% off</div>
+                    <div class="timer"><i class="fa-solid fa-clock"></i> Fast</div>
+                </div>
+
+                <div class="rest-logo">
+                    <img src="./images/featured-rests-imgs/Imagekfc-logo.png" alt="">
+
+                    <div class="name-rating">
+                        <p class="greys-vage">
+                            Pizzahub</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i><span class="rate">46</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="opening green">
+                    Open Now
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="./images/featured-rests-imgs/Imagered-square.png" alt="">
+                    <div class="tag"><i class="fa-solid fa-tag"></i> 20% off</div>
+                    <div class="timer"><i class="fa-solid fa-clock"></i> Fast</div>
+                </div>
+
+                <div class="rest-logo">
+                    <img src="./images/featured-rests-imgs/Restaruant Logologo7.png" alt="">
+
+                    <div class="name-rating">
+                        <p class="greys-vage">
+                            Donuts hut</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i><span class="rate">46</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="opening green">
+                    Open Now
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="./images/featured-rests-imgs/Imagetaco-bell.png" alt="">
+                    <div class="tag"><i class="fa-solid fa-tag"></i> 20% off</div>
+                    <div class="timer"><i class="fa-solid fa-clock"></i> Fast</div>
+                </div>
+
+                <div class="rest-logo">
+                    <img src="./images/featured-rests-imgs/Restaruant Logologo8.png" alt="">
+
+                    <div class="name-rating">
+                        <p class="greys-vage">
+                            Donuts hut</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i><span class="rate">46</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="opening green">
+                    Open Now
+                </button>
+            </div>
+        </div>
+        <button class="view-all">
+            View All >
+        </button>
+    </div>
+
+    <div class="food-catagories">
+        <div class="round-foods">
+            <div class="round-food">
+                <img src="./images/catagories/pizza.png" alt="">
+                <p class="greys-vage small">Pizza</p>
+            </div>
+
+            <div class="round-food">
+                <img src="./images/catagories/burger.png" alt="">
+                <p class="greys-vage small">Burger</p>
+            </div>
+
+            <div class="round-food">
+                <img src="./images/catagories/noodles.png" alt="">
+                <p class="greys-vage small">Noodles</p>
+            </div>
+
+            <div class="round-food">
+                <img src="./images/catagories/sandiwch.png" alt="">
+                <p class="greys-vage small">Sub-sandiwch</p>
+            </div>
+
+            <div class="round-food">
+                <img src="./images/catagories/chowmein.png" alt="">
+                <p class="greys-vage small">Chowmein</p>
+            </div>
+
+            <div class="round-food">
+                <img src="./images/catagories/steak.png" alt="">
+                <p class="greys-vage small">Steak</p>
+            </div>
+        </div>
+  
+        <div class="search-by-food">
+            <p class="search-food-heading">Search by Food</p>
+            <div class="view-and-arrow">
+                <p>View All ></p>            
+                <button class="arrow-btn">&#60;</button>
+                <button class="arrow-btn">&#62;</button>
+            </div>
+
+
+        </div>
+
     </div>
 
 </body>
