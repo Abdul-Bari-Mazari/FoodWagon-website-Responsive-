@@ -10,6 +10,10 @@ body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 .navbar-container {
     display: flex;
     align-items: center;
@@ -578,7 +582,7 @@ input::placeholder {
 }
 
 .search-by-food {
-    padding-top: 60px;
+    padding: 60px 0;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -600,4 +604,170 @@ input::placeholder {
     color: rgba(255, 179, 14, 1);
     font-weight: 700;
     font-size: small;
+}
+
+.install-section {
+    padding-top: 100px;
+    background-color: #FEEFD0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.massive-container {
+    width: 70%;
+}
+
+.app-features {
+    padding: 40px 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 27px 82px 0px rgba(255, 174, 0, 0.28), 0px 14px 15px 0px rgba(255, 174, 0, 0.01);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.daily-discounts {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 200px;
+}
+
+.daily-discounts>img {
+    width: 100px;
+}
+
+.orange-text {
+    background: linear-gradient(93deg, #FB3C00 -47.72%, #FFB800 136.81%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.hr-line {
+    height: 70px;
+    width: 2px;
+}
+
+.mobile-stuff {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-stuff img {
+    width: 450px;
+    z-index: 10;
+}
+
+.install-info {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.install-heading {
+    color: rgb(255, 179, 14);
+    font-weight: bold;
+    font-size: xxx-large;
+    align-self: flex-start;
+}
+
+.install-text {
+    color: #827E7E;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 16px;
+}
+
+.download-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.download-buttons img {
+    border-radius: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+.curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.big-food-section {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.big-food {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 27px 82px 0px rgba(124, 124, 124, 0.28), 0px 14px 15px 0px rgba(124, 124, 124, 0.06);
+    border-radius: 16px;
+
+}
+
+.sandwich, .chicken {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.big-info-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.black-text {
+    font-weight: bold;
+    font-size: xx-large;
+    line-height: 34px;
+}
+
+.yellow-text {
+    color: rgba(255, 179, 14, 1);
+}
+
+.big-info-and-button button {
+    padding: 14px 82px;
+}
+
+.sandwich img {
+    width: 65%;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.right-big-img {
+    width: 65%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
