@@ -118,7 +118,7 @@ nav button {
 
 .starving-container {
     width: 80%;
-    height: 450px;
+    padding: 50px 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -301,8 +301,16 @@ input::placeholder {
     padding-top: 60px;
     padding-bottom: 100px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+@media (max-width: 390px) {
+    .delivery-btn, .pickup-btn {
+        display: block;
+    }
+    
 }
 
 .container {
@@ -399,7 +407,7 @@ input::placeholder {
 .popular-items-container {
     padding: 50px 0;
     display: flex;
-    gap: 15px;
+    gap: 5px;
     align-items: center;
 }
 
@@ -413,6 +421,14 @@ input::placeholder {
     border: none;
     height: 60px;
     padding: 10px 20px;
+}
+
+@media (max-width: 360px) {
+    .arrow-btn {
+        font-size: large;
+        height: 40px;
+        padding: 5px 14px;
+    }
 }
 
 .popular-item {
@@ -449,6 +465,30 @@ input::placeholder {
 .img-div img {
     width: 260px;
     border-radius: 12px;
+}
+
+@media (max-width: 1210px) {
+    .last {
+        display: none;
+    }
+}
+
+@media (max-width: 1002px) {
+    .sec-last {
+        display: none;
+    }
+}
+
+@media (max-width: 788px) {
+    .third-last {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .forth-last {
+        display: none;
+    }
 }
 
 .featured-restaurants {
@@ -606,6 +646,19 @@ input::placeholder {
     font-size: small;
 }
 
+@media (max-width: 524px) {
+    .search-food-heading {
+        font-size: large;
+    }
+
+    .search-by-food {
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 20px;
+    }
+}
+
 .install-section {
     padding-top: 100px;
     background-color: #FEEFD0;
@@ -626,6 +679,7 @@ input::placeholder {
     background-color: white;
     box-shadow: 0px 27px 82px 0px rgba(255, 174, 0, 0.28), 0px 14px 15px 0px rgba(255, 174, 0, 0.01);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -658,10 +712,11 @@ input::placeholder {
 .mobile-stuff {
     margin-top: 100px;
     display: flex;
+    gap: 10px;
     justify-content: space-around;
 }
 
-.mobile-stuff img {
+.phone-img {
     width: 450px;
     z-index: 10;
 }
@@ -705,6 +760,72 @@ input::placeholder {
     bottom: 0;
     width: 100%;
     z-index: 0;
+}
+
+@media (max-width: 402px) {
+    .install-heading {
+        font-size: xx-large;
+    }
+
+    .install-info {
+        justify-content: center;
+        width: 100%;
+    }
+/* 
+    .download-buttons {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .download-buttons img {
+        height: 80px;
+        width: 140px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 852px) {
+    .mobile-stuff {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width: 700px) {
+    .massive-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hr-line {
+        display: none;
+    }
+
+    .app-features {
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .phone-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 916px) {
+    .two-hr {
+        display: none;
+    }
+}
+
+@media (max-width: 1172px) {
+    .orange-text {
+        font-size: large;
+    }
+
 }
 
 .big-food-section {
@@ -758,7 +879,8 @@ input::placeholder {
 }
 
 .big-info-and-button button {
-    padding: 14px 82px;
+    padding: 14px 0;
+    width: 80%;
 }
 
 .sandwich img {
@@ -810,6 +932,99 @@ input::placeholder {
     padding: 12px 16px;
 }
 
+
+
+@media (max-width: 1084px) {
+    .sandwich, .chicken {
+        flex-direction: column;
+        gap: 44px;
+    }
+
+    .sandwich img, .right-big-img {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .sandwich {
+        padding-top: 40px;
+    }
+
+    .chicken {
+        padding-bottom: 40px;
+    }
+
+    .big-info-and-button {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .big-info-and-button button {
+        padding: 14px 0;
+        width: 80%;
+    }
+
+    .center-info p {
+        font-size: x-large;
+        line-height: 26px;
+    }
+}
+
+@media (max-width:660px) {
+    .center-info {
+        gap: 10px;
+    }
+
+    .center-info p {
+        font-size: large;
+    }
+
+    .center-info button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .big-food-section {
+        margin: 60px 0;
+    }
+
+    .center-info p {
+        font-size: medium;
+    }
+
+    .center-info button {
+        font-size: 8px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 426px) {
+    .center-info p {
+        font-size: small;
+    }
+
+    .center-info button {
+        font-size: 6px;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width:390px) {
+    .big-food-section {
+        margin: 40px 0;
+    }
+
+    .center-info p {
+        line-height: 15px;
+    }
+
+    .center-info button {
+        padding: 4px 6px;
+    }
+}
+
+
 footer {
     padding: 70px 0;
     background-color: rgba(33, 33, 33, 1);
@@ -837,14 +1052,19 @@ footer {
 .cities {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 ul {
-    font-size: small;
+    font-size: medium;
     color: rgb(204, 204, 204);
     margin-bottom: 6px;
 }
@@ -854,13 +1074,17 @@ ul {
 }
 
 .company-container {
-    width: 50%;
-    justify-content: space-around;
+
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
 }
 
 .company-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .follow {
@@ -870,7 +1094,6 @@ ul {
 }
 
 .follow-and-subs {
-    width: 30%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -878,40 +1101,72 @@ ul {
 
 .follow-and-subs p {
     color: #818080;
-    font-size: 14px;
+    font-size: medium;
     font-weight: bold;
 }
-
-
 
 .social-media {
     display: flex;
     gap: 12px;
 }
 
-.social-media img{
+.social-media img {
     width: 16px;
 }
 
+.input-with-envelope {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.envelope {
+    position: absolute;
+    width: 20px;
+    top: 17px;
+    left: 10px;
+}
 
 .subscribe input {
     background-color: rgba(66, 66, 66, 1);
     color: rgba(173, 173, 173, 1);
-    
     border-radius: 5px;
+    padding: 5px 0;
+    padding-left: 35px;
 }
 
 .subscribe {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 .subscribe button {
-    padding: 10px 16px;
+    padding: 10px 24px;
     border-radius: 5px;
 }
 
+.rights-section {
+    padding-top: 36px;
+    width: 80%;
+    margin: 0 auto;
+}
 
+.rights-section p {
+    font-size: medium;
+    color: rgb(204, 204, 204);
+}
 
+.rights-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
 
-
+.copyright {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
